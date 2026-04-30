@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About the Circulatory System</title>
+  <title>Subeen's Circulatory System</title>
   <style>
+    /* 배경 및 중앙 정렬 레이아웃 */
     body {
-      background-color: #ff5f52; /* 수빈님의 자몽색 */
+      background-color: #ff5f52; /* 자몽색 배경 */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -28,16 +29,15 @@
     .subtitle {
       font-size: 1.2rem;
       opacity: 0.9;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
-    /* 혈관 이미지 스타일 */
+    /* 하얀색 혈관 일러스트 스타일 */
     .vessel-img {
-      max-width: 280px;
+      max-width: 250px;
       height: auto;
       margin: 20px 0;
-      /* 👇 검은색 아이콘을 하얀색으로 바꿔주는 필터! */
-      filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(255,255,255,0.3));
+      filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(255,255,255,0.4));
       transition: transform 0.3s ease;
     }
 
@@ -45,25 +45,48 @@
       transform: scale(1.05);
     }
 
-    /* 이동 버튼 스타일 */
+    /* 버튼들을 가로로 나열하는 컨테이너 */
+    .button-container {
+      display: flex;
+      flex-direction: row; 
+      gap: 15px; 
+      margin-top: 30px;
+      flex-wrap: wrap; 
+      justify-content: center;
+      max-width: 1000px;
+    }
+
+    /* 공통 버튼 스타일 */
     .menu-btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 15px 35px;
+      padding: 18px 25px;
       background-color: white;
       color: #ff5f52;
       text-decoration: none;
       border-radius: 50px;
       font-weight: bold;
-      font-size: 1.1rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
       transition: all 0.3s ease;
+      min-width: 240px; 
+      box-sizing: border-box;
     }
 
     .menu-btn:hover {
       background-color: #fff0ef;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    /* 반응형 설정: 화면이 좁아지면 버튼을 세로로 정렬 */
+    @media (max-width: 850px) {
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu-btn {
+        width: 90%;
+      }
     }
   </style>
 </head>
@@ -72,15 +95,20 @@
   <h1>Welcome</h1>
   <p class="subtitle">Subeen's first Website</p>
   
-  <!-- 검증된 혈관 일러스트 링크 (옵션 1 적용) -->
   <img src="https://cdn-icons-png.flaticon.com/512/2865/2865805.png" 
-       alt="White Blood Vessels" 
+       alt="순환계 일러스트" 
        class="vessel-img">
 
-  <br>
-  
-  <!-- 버튼을 누르면 이전에 만든 heart.html로 이동합니다 -->
-  <a href="heart.html" class="menu-btn">About the Circulatory System ➔</a>
+  <div class="button-container">
+    <!-- 가장 왼쪽에 위치한 입문자용 버튼 (Beginner's Guide) -->
+    <a href="basics.html" class="menu-btn">Beginner's Guide ➔</a>
+
+    <!-- 기존 개념 학습 버튼 -->
+    <a href="heart.html" class="menu-btn">About the Circulatory System ➔</a>
+
+    <!-- 심화 탐구 버튼 -->
+    <a href="inquiry.html" class="menu-btn">Deep Dive into Inquiry ➔</a>
+  </div>
 
 </body>
 </html>

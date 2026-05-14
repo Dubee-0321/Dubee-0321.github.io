@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subeen's Circulatory System</title>
   <style>
-    /* 배경 및 중앙 정렬 레이아웃 */
     body {
-      background-color: #ff5f52; /* 자몽색 배경 */
+      background-color: #ff5f52;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -32,7 +31,6 @@
       margin-bottom: 15px;
     }
 
-    /* 하얀색 혈관 일러스트 스타일 */
     .vessel-img {
       max-width: 250px;
       height: auto;
@@ -45,7 +43,6 @@
       transform: scale(1.05);
     }
 
-    /* 버튼들을 가로로 나열하는 컨테이너 */
     .button-container {
       display: flex;
       flex-direction: row; 
@@ -53,10 +50,9 @@
       margin-top: 30px;
       flex-wrap: wrap; 
       justify-content: center;
-      max-width: 1000px;
+      max-width: 1100px;
     }
 
-    /* 공통 버튼 스타일 */
     .menu-btn {
       display: inline-block;
       padding: 18px 25px;
@@ -68,7 +64,7 @@
       font-size: 1rem;
       box-shadow: 0 5px 15px rgba(0,0,0,0.15);
       transition: all 0.3s ease;
-      min-width: 240px; 
+      min-width: 250px; 
       box-sizing: border-box;
     }
 
@@ -78,7 +74,6 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     }
 
-    /* 반응형 설정: 화면이 좁아지면 버튼을 세로로 정렬 */
     @media (max-width: 850px) {
       .button-container {
         flex-direction: column;
@@ -100,13 +95,10 @@
        class="vessel-img">
 
   <div class="button-container">
-    <!-- 가장 왼쪽에 위치한 입문자용 버튼 (Beginner's Guide) -->
     <a href="basics.html" class="menu-btn">Beginner's Guide ➔</a>
 
-    <!-- 기존 개념 학습 버튼 -->
     <a href="heart.html" class="menu-btn">About the Circulatory System ➔</a>
 
-    <!-- 심화 탐구 버튼 -->
     <a href="inquiry.html" class="menu-btn">Advanced Research Hub ➔</a>
   </div>
 

@@ -1,17 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>심장 상세정보</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Circulatory System</title>
   <style>
-    body { background-color: #ff5f52; color: white; text-align: center; font-family: sans-serif; padding-top: 50px; }
-    .back-btn { background: white; color: #ff5f52; padding: 10px 20px; text-decoration: none; border-radius: 20px; font-weight: bold; }
+    body {
+      background-color: #ff5f52;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .content-grid {
+      display: grid;
+      gap: 20px;
+      max-width: 800px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .topic-card {
+      background-color: white;
+      color: #ff5f52;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: left;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .topic-card h3 {
+      margin-top: 0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: white;
+      color: #ff5f52;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .back-btn:hover {
+      transform: scale(1.05);
+      background-color: #fff0ef;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
   </style>
 </head>
 <body>
-  <h1>❤️ 심장은 어떻게 뛸까요?</h1>
-  <p>심장은 우리 몸의 펌프 역할을 해요!</p>
-  <br><br>
+
+  <h1>About the Circulatory System</h1>
+  
+  <div class="content-grid">
+    <div class="topic-card">
+      <h3></h3>
+      <p></p>
+    </div>
+    <div class="topic-card">
+      <h3>🩸</h3>
+      <p></p>
+    </div>
+  </div>
+
   <a href="index.html" class="back-btn">Return to Main</a>
+
 </body>
 </html>

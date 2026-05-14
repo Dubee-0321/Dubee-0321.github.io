@@ -98,27 +98,31 @@
       font-style: italic;
       text-decoration: underline;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.3rem; /* 1rem에서 1.3rem으로 키움 */
+      display: inline-block;
     }
 
     
     .tooltip {
       visibility: hidden;
-      width: 150px;
+      width: 180px;
       background-color: white;
       color: #ff5f52;
       text-align: center;
       border-radius: 10px;
-      padding: 10px;
+      padding: 12px;
       position: absolute;
       z-index: 1;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 10px;
+      
+   
+      top: 50%;
+      left: 110%;
+      transform: translateY(-50%);
+      
       opacity: 0;
       transition: opacity 0.3s;
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      font-size: 1rem;
     }
 
    

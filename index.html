@@ -83,10 +83,57 @@
         width: 90%;
       }
     }
+
+
+    .how-to-use-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .how-to-use-btn {
+      color: white;
+      font-style: italic;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    
+    .tooltip {
+      visibility: hidden;
+      width: 150px;
+      background-color: white;
+      color: #ff5f52;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+   
+    .how-to-use-container:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
 
+  <div class="how-to-use-container">
+    <span class="how-to-use-btn">How to use</span>
+    <div class="tooltip">Hi!</div>
+  </div>
   <h1>Welcome</h1>
   <p class="subtitle">Subeen's first Website</p>
   
